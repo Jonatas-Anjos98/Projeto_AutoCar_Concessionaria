@@ -7,3 +7,28 @@
 
     $row = $res->fetch_object();
 ?>
+
+<form action='?page=salvar-funcionario' method='POST'>
+    <input type="hidden" name="acao" id="editar">
+    <input type="hidden" name="id_funcionario" value="<?php print $row->id_funcionario; ?>">
+
+    
+    <div class='mb-3'>
+        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+        <input type='text' name='nome_funcionario'  class='form-control border-success' id="exampleFormControlInput1" value='<?php print $row->nome_funcionario; ?>'>
+    </div>
+
+    <div class='mb-3'>
+        <label>E-mail:</label>
+        <input type='email' name='email_funcionario' class='form-control border-success' value='<?php print $row->email_funcionario; ?>'>
+    </div>
+
+    <div class='mb-3'>
+        <label>Telefone:</label>
+        <input type='text' name='telefone_funcionario' class='form-control border-success' placeholder='Digite sua senha' value='<?php print $row->telefone_funcionario; ?>'>
+    </div>
+
+    <div>
+        <button type='submit' class='btn btn-primary'>Enviar</button>
+    </div><br><br><br><br><br><br>
+</form>
