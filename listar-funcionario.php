@@ -16,6 +16,7 @@
         print "<th>Email</th>";
         print "<th>Telefone</th>";
         print "<th>Ações</th>";
+        print "</tr>";
         while ($row = $res->fetch_object()){
             print "<tr>";
             print "<td>" . $row->id_funcionario . "</td>";
