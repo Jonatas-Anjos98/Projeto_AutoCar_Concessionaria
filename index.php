@@ -162,7 +162,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h5 class="mb-3">Sobre a AutoCar</h5>
-                    <p>Somos uma plataforma que conecta doadores a ONGs confiáveis em todo o Brasil, promovendo impacto social e transparência em cada doação.</p>
+                    <p>Somos a AutoCar, uma concessionária que conecta pessoas ao carro ideal, oferecendo confiança, qualidade e transparência em cada negociação.</p>
                     <a href="sobrenos.html" class="btn btn-primary btn-sm">Saiba Mais</a>
                 </div>
                 <div class="col-md-4 mb-4">
