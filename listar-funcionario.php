@@ -28,7 +28,7 @@
             <button class='btn btn-danger' onclick=\"if(confirm('tem certeza que deseja excluir?')){location.href='?page=salvar-funcionario&acao=excluir&excluir&id_funcionario={$row->id_funcionario}';}else{false;}\">Excluir</button></td>";
             print "</tr>";
         }
-        print "</table>";
+        print "</table><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
     }else{
         print "<p>Não encontrou resultado!</p>";
     }
