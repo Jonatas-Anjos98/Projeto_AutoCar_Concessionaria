@@ -16,7 +16,7 @@
 
     <div class='mb-3'>
         <label>Telefone:</label>
-        <input type='text' name='telefone_funcionario' class='form-control border-success' placeholder='Digite sua senha'>
+        <input type='text' name='telefone_funcionario' class='form-control border-success' placeholder='Digite seu telefone'>
     </div>
 
     <div>
