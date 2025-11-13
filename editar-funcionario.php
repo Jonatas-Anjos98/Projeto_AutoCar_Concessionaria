@@ -9,7 +9,7 @@
 ?>
 
 <form action='?page=salvar-funcionario' method='POST'>
-    <input type="hidden" name="acao" id="editar">
+    <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_funcionario" value="<?php print $row->id_funcionario; ?>">
 
     
