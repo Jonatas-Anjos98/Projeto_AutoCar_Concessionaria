@@ -6,27 +6,27 @@
     
     <div class='mb-3'>
         <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-        <input type='text' name='nome_funcionario'  class='form-control border-success' id="exampleFormControlInput1" placeholder='Digite seu nome' required>
+        <input type='text' name='nome_cliente'  class='form-control border-success' id="exampleFormControlInput1" placeholder='Digite seu nome' required>
     </div>
     
     <div class='mb-3'>
         <label>Telefone:</label>
-        <input type='text' name='telefone_funcionario' class='form-control border-success' placeholder='Digite sua telefone' required>
+        <input type='text' name='telefone_cliente' class='form-control border-success' placeholder='Digite sua telefone' required>
     </div>
     
     <div class='mb-3'>
         <label>CPF:</label>
-        <input type='text' name='cpf_funcionario' class='form-control border-success' placeholder='Digite seu cpf' required>
+        <input type='text' name='cpf_cliente' class='form-control border-success' placeholder='Digite seu cpf' required>
     </div>
 
     <div class='mb-3'>
         <label>E-mail:</label>
-        <input type='email' name='email_funcionario' class='form-control border-success' placeholder='Digite seu email'>
+        <input type='email' name='email_cliente' class='form-control border-success' placeholder='Digite seu email'>
     </div>
     
     <div class='mb-3'>
         <label>Endereço:</label>
-        <input type='text' name='endereco_funcionario' class='form-control border-success' placeholder='Digite seu endereço'>
+        <input type='text' name='endereco_cliente' class='form-control border-success' placeholder='Digite seu endereço'>
     </div>
     
     <div class='mb-3'>
