@@ -9,7 +9,7 @@
 
     if($Quant > 0){
         print "<p>Encontrou <b>$Quant</b> Número(s) de funcionario(s)!</p>";
-        print "<table class='table table-hover table-striped table-bordered border border-3 border'>";
+        print "<table class='table table-hover table-striped table-bordered Dark border border-3 border'>";
         print "<tr>";
         print "<th>#</th>";
         print "<th>Nome</th>";
