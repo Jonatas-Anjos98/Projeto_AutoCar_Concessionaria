@@ -55,6 +55,5 @@
                 print "<script>location.href='?page=listar-cliente';</script>";
             }
             break;
-            break;
     }
 ?>
