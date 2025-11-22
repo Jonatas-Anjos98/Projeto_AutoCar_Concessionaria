@@ -25,10 +25,10 @@
 
             if ($res == true){
                 print "<script>alert('Marca atualizada com sucesso!')</script>";
-                print "<script>location.href='?page=listar_marca';</script>";
+                print "<script>location.href='?page=listar-marca';</script>";
             }else{
                 print "<script>alert('Não foi possivel editar marca!')</script>";
-                print "<script>location.href='?page=listar_marca';</script>";
+                print "<script>location.href='?page=listar-marca';</script>";
             }
             break;
 
