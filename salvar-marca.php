@@ -17,10 +17,23 @@
             break;
 
         case 'editar':
+            $nome = $_POST['nome_marca'];
 
+            $sql = "UPDATE marca SET nome_marca='{$nome}' WHERE id_marca=" . $_REQUEST['id_marca'];
+
+            $res = $conn->query($sql);
+
+            if ($res == true){
+                print "<script>alert('Marca atualizada com sucesso!')</script>";
+                print "<script>location.href='?page=listar_marca';</script>";
+            }else{
+                print "<script>alert('Não foi possivel editar marca!')</script>";
+                print "<script>location.href='?page=listar_marca';</script>";
+            }
             break;
 
-        case 'excluir': 
+        case 'excluir':
+            $sql = "DELETE FROM cliente WHERE id_marca" . $_REQUEST['id_marca'];
             break;
     }
 ?>
