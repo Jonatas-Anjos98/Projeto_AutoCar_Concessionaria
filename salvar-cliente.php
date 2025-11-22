@@ -46,6 +46,7 @@
             $sql = "DELETE FROM cliente WHERE id_cliente=" . $_REQUEST['id_cliente'];
 
             $res = $conn->query($sql);
+            
             if($res == true){
                 print "<script>alert('Você excluiu esse cliente com sucesso!')</script>";
                 print "<script>location.href='?page=listar-cliente';</script>";
