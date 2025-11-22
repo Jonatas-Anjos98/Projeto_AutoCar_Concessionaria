@@ -40,6 +40,7 @@
             $sql = "DELETE FROM funcionario WHERE id_funcionario=" . $_REQUEST['id_funcionario'];
 
             $res = $conn->query($sql);
+            
             if($res == true){
                 print "<script>alert('Você excluiu esse funcionario com sucesso!')</script>";
                 print "<script>location.href='?page=listar-funcionario';</script>";
