@@ -33,7 +33,18 @@
             break;
 
         case 'excluir':
-            $sql = "DELETE FROM cliente WHERE id_marca" . $_REQUEST['id_marca'];
+            $sql = "DELETE FROM marca WHERE id_marca=" . $_REQUEST['id_marca'];
+
+            $res = $conn->query($sql);
+
+            if($res == true){
+                print "<script>alert('Você exclui essa marca com sucesso!')</script>";
+                print "<script>location.href='?page=listar-marca';</script>";
+            }else{
+                print "<script>alert('Não foi possível excluir a marca!';)</script>";
+                print "<script>location.href='?page=listar-marca';</script>";
+            }
+
             break;
     }
 ?>
