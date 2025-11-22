@@ -11,7 +11,7 @@
 <form action='?page=salvar-funcionario' method='POST'>
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_funcionario" value="<?php print $row->id_funcionario; ?>">
-w 
+
     <div class='mb-3'>
         <label for="exampleFormControlInput1" class="form-label">Nome:</label>
         <input type='text' name='nome_funcionario'  class='form-control border-success' id="exampleFormControlInput1" value='<?php print $row->nome_funcionario; ?>'>
