@@ -30,13 +30,11 @@
                 <button class='btn btn-success' onclick=\"location.href='?page=editar-modelo&id_modelo={$row->id_modelo}';\">Editar</button>
                 <button class='btn btn-danger' onclick=\"if(confirm('Tem certeza que deseja Excluir esse modelo?')){location.href='?page=salvar-modelo&acao=excluir&id_modelo={$row->id_modelo}';}else{false}\">Excluir</button>
             </td>";
-
             print "</tr>";
-
         }
-        print "</table>";
+        print "</table> <br><br><br>";
         
     }else{
-        print "Não foi possivel listar nenhum modelo!";
+        print "Não foi possivel listar nenhum modelo!<br><br><br>";
     }
 ?>
