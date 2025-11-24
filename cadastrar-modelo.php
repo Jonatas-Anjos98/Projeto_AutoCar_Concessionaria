@@ -1,6 +1,6 @@
 <h1>Cadastrar Modelo</h1>
 
-<form action="?page=salvar-modelo" methof="POST">
+<form action="?page=salvar-modelo" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
     
     <div class="mb-3">
@@ -45,6 +45,6 @@
 
     <div>
         <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
+    </div><br><br><br>
 
 </form>
