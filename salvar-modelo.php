@@ -12,11 +12,11 @@
             $res = $conn->query($sql);
 
             if($res == true){
-                print "<script>alert('Essa modelo foi cadastrado!')</script>";
+                print "<script>alert('Essa modelo foi cadastrado!');</script>";
                 print "<script>location.href='?page=listar-modelo';</script>";
             }else{
                 print "<script>alert('Não foi possível cadastrar esse modelo!')</script>";
-                print "<script>location.href='?page=listar-modelo'</script>";
+                print "<script>location.href='?page=listar-modelo';</script>";
             }
 
             break;
@@ -27,10 +27,31 @@
             $tipo = $_POST['tipo_modelo'];
             $marca = $_POST['marca_id_marca'];
 
+            $sql = "UPDATE modelo SET nome_modelo='{$nome}', cor_modelo='{$cor}', ano_modelo='{$ano}', tipo_modelo='{$tipo}', marca_id_marca={$marca} WHERE id_modelo=" . $_REQUEST['id_modelo'];
 
+            $res = $conn->query($sql);
+
+            if($res == true){
+                print "<script>alert('Esse modelo foi atualiizada com sucesso!');</script>";
+                print "<script>location.href='?page=listar-modelo';</script>";
+            }else{
+                print "<script>alert('Esse modelo não foi atualizado!');</script>";
+                print "<script>location.href='?page=listar-modelo';</script>";
+            }
 
             break;
         case 'excluir':
+            $sql = "DELETE FROM modelo WHERE id_modelo =" . $_REQUEST['id_modelo'];
+
+            $res = $conn->query($sql);
+
+            if($res == true){
+                print "<script>alert('Esse modelo foi excluido com sucesso!');</script>";
+                print "<script>location.href='?page=listar-modelo';</script>";
+            }else{
+                print "<script>alert('Não foi possível excluir o modelo!');</script>";
+                print "<script>location.href='?page=listar-modelo';</script>";
+            }
             break;
     }
 ?>
