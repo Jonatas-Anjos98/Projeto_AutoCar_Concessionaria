@@ -23,13 +23,14 @@
             print "<td>" . $row->nome_cliente . "</td>";
             print "<td>" . $row->email_cliente . "</td>";
             print "<td>" . $row->telefone_cliente . "</td>";
-            print "<td> <button class='btn btn-success' onclick=\"location.href='?page=editar-cliente&id_cliente={$row->id_cliente}';\">Editar</button>
-            
-            <button class='btn btn-danger' onclick=\"if(confirm('tem certeza que deseja excluir?')){location.href='?page=salvar-cliente&acao=excluir&excluir&id_cliente={$row->id_cliente}';}else{false;}\">Excluir</button></td>";
+            print "<td>
+            <button class='btn btn-success' onclick=\"location.href='?page=editar-cliente&id_cliente={$row->id_cliente}';\">Editar</button>
+            <button class='btn btn-danger' onclick=\"if(confirm('tem certeza que deseja excluir?')){location.href='?page=salvar-cliente&acao=excluir&excluir&id_cliente={$row->id_cliente}';}else{false;}\">Excluir</button>
+            </td>";
             print "</tr>";
         }
-        print "</table><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+        print "</table><br><br><br>";
     }else{
-        print "<p>Não encontrou resultado!</p>";
+        print "<p>Não encontrou resultado!</p><br><br><br>";
     }
 ?>
