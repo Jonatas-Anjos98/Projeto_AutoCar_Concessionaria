@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" type='text/css' rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
@@ -72,7 +72,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="flex-grow-1">
         <div class="container mt-3">
             <div class="row">
                 <div class="col">
@@ -157,7 +157,7 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-light pt-5 pb-4 mt-5">    
+    <footer class="bg-dark text-light pt-5  pb-4 mt-auto">    
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
