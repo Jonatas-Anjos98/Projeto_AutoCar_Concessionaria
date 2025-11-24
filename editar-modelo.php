@@ -8,7 +8,7 @@
 ?>
 
 <form action="?page=salvar-modelo" method="POST">
-    <input type="hidden" name="acao" value="cadastrar">
+    <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_modelo" value="<?php print $row->id_modelo; ?>">
     
     <div class="mb-3">
@@ -17,7 +17,7 @@
             <option>-+Escolha+-</option>
             <?php 
                 $sql_01 = "SELECT * FROM marca";
-                $res_01 = $conn->query($sql);
+                $res_01 = $conn->query($sql_01);
                 $Quant_01 = $res_01->num_rows;
 
                 if($Quant_01 > 0){
