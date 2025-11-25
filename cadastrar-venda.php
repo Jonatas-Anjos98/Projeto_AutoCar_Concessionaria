@@ -42,6 +42,7 @@
             ?>
         </select>
     </div>
+    
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Cliente:</label>
         <select name="cliente_id_cliente" class="form-control border-success" required>
@@ -69,7 +70,7 @@
 
     <div class='mb-3'>
         <label for="exampleFormControlInput1" class="form-label">Valor da venda:</label>
-        <input type='number' name='valor_venda' class='form-control border-success' placeholder='Digite seu email'>
+        <input type='number' name='valor_venda' class='form-control border-success' placeholder='Digite o valor da venda'>
     </div>
 
     <div>
