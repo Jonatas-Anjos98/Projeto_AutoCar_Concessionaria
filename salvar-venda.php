@@ -40,6 +40,17 @@
             }
             break;
         case 'excluir':
+            $sql = "DELETE FROM venda WHERE id_venda = " . $_REQUEST['id_venda'];
+
+            $res = $conn->query($sql);
+
+            if($res == true){
+                print "<script>alert('Essa venda foi excluido com sucesso!');</script>";
+                print "<script>location.href='?page=listar-venda';</script>";
+            }else{
+                print "<script>alert('Não foi possível excluir essa venda!');</script>";
+                print "<script>location.href='?page=listar-venda';</script>";
+            }
             break;
     }
 ?>
