@@ -5,7 +5,7 @@
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Modelo do carro:</label>
-        <select name="marca_id_marca" class="form-control border-success" required>
+        <select name="modelo_id_modelo" class="form-control border-success" required>
             <option>Escolha o modelo</option>
             <?php 
                 $sql = "SELECT * FROM modelo";
@@ -25,7 +25,7 @@
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">funcionário:</label>
-        <select name="marca_id_marca" class="form-control border-success" required>
+        <select name="funcionario_id_funcionario" class="form-control border-success" required>
             <option>Escolha o funcionário</option>
             <?php 
                 $sql = "SELECT * FROM funcionario";
@@ -44,7 +44,7 @@
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Cliente:</label>
-        <select name="marca_id_marca" class="form-control border-success" required>
+        <select name="cliente_id_cliente" class="form-control border-success" required>
             <option>Escolha o cliente</option>
             <?php 
                 $sql = "SELECT * FROM cliente";
@@ -64,12 +64,12 @@
 
     <div class='mb-3'>
         <label for="exampleFormControlInput1" class="form-label">Data da venda:</label>
-        <input type='date' name='date_venda'  class='form-control border-success' id="exampleFormControlInput1">
+        <input type='date' name='data_venda'  class='form-control border-success' id="exampleFormControlInput1">
     </div>
 
     <div class='mb-3'>
-        <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
-        <input type='email' name='email_venda' class='form-control border-success' placeholder='Digite seu email'>
+        <label for="exampleFormControlInput1" class="form-label">Valor da venda:</label>
+        <input type='number' name='valor_venda' class='form-control border-success' placeholder='Digite seu email'>
     </div>
 
     <div>
